@@ -60,6 +60,7 @@ select {
 select:hover {
   background-color: #e0e0e0;
   border-color: #0056b3;
+  color: black;
 }
 select:focus {
   border-color: #0056b3;
@@ -85,9 +86,7 @@ section option:checked {
   background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 4px 20px rgba(0, 255, 204, 0.5); /* Soft shadow for depth */
-  margin: 95px auto;
-  max-height: 500px;
-  height: 600px;
+  margin: 50px auto;
 }
 
 .city {
@@ -98,8 +97,8 @@ section option:checked {
   margin: 20px auto; /* Center the container horizontally */
   align-content: center;
   box-shadow: 0 4px 20px rgba(0, 255, 204, 0.5); /* Subtle glow shadow */
-  width: 700px;
-  padding-bottom: 15px;
+  width: 664px;
+  padding: 20px;
 }
 
 .city:last-child {
@@ -109,8 +108,8 @@ section option:checked {
 .date {
   font-size: 18px; /* Smaller font size for the date */
   color: #cccccc; /* Light grey for the date */
-  margin-top: 5px; /* Space above the date */
-  margin-left: -515px;
+  margin-top: -5px; /* Space above the date */
+  margin-left: -475px;
 }
 
 .time {
@@ -121,11 +120,12 @@ section option:checked {
   margin-left: 9px;
   margin-top: -55px;
   text-align: right;
-  margin-right: 28px;
+  margin-right: 26px;
 }
 footer {
-  margin: 3px 0; /* Small margins for paragraphs */
   font-size: 16px; /* Font size for readability */
+  text-align: center;
+  margin: 0;
 }
 
 a {

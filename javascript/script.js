@@ -24,6 +24,19 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+
+  // Paris
+  let newyorkElement = document.querySelector("#new-york");
+  if (newyorkElement) {
+    let newyorkDateElement = newyorkElement.querySelector(".date");
+    let newyorkTimeElement = newyorkElement.querySelector(".time");
+    let newyorkTime = moment().tz("America/New_York");
+
+    newyorkDateElement.innerHTML = newyorkTime.format("MMMM	Do YYYY");
+    newyorkTimeElement.innerHTML = newyorkTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {
