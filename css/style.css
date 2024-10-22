@@ -50,10 +50,7 @@ select {
   color: #00ffcc; /* Neon text color */
   background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
   appearance: none; /* Remove default dropdown arrow */
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6"><polygon points="0,0 10,0 5,6" fill="%2300ffcc"/></svg>'); /* Custom dropdown arrow */
-  background-repeat: no-repeat; /* Prevent repeating background */
-  background-position: right 10px center; /* Position the arrow */
-  background-size: 10px; /* Size of the arrow */
+
   transition: border-color 0.3s; /* Smooth transition for border color */
   width: 700px;
 }
@@ -108,7 +105,7 @@ section option:checked {
 .date {
   font-size: 18px; /* Smaller font size for the date */
   color: #cccccc; /* Light grey for the date */
-  margin-top: -5px; /* Space above the date */
+  margin-top: -10px; /* Space above the date */
   margin-left: -480px;
 }
 
