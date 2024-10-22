@@ -1,42 +1,105 @@
 body {
-  background-color: #f9f7fe;
-  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Orbitron", sans-serif;
+  color: #00ffcc; /* Neon-like text color */
+  background: linear-gradient(
+    135deg,
+    #0e0e0e,
+    #2a2a2a
+  ); /* Dark gradient background */
+  background-attachment: fixed; /* Fixes the background to the viewport */
+  background-size: cover; /* Ensures the background covers the entire viewport */
+  height: 100vh; /* Full viewport height */
 }
 
-h1 {
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 36px;
-}
-
+h1,
 h2 {
-  margin: 0 0 5px;
-  font-size: 28px;
+  color: #00ffcc; /* Neon color for headings */
+  font-family: "Arial", sans-serif; /* Font family */
+  text-align: center; /* Center the text */
 }
-
+h1 {
+  font-size: 36px; /* Set a large font size for prominence */
+  font-weight: bold; /* Use bold text for emphasis */
+  color: #00ffcc; /* Neon color for a modern look */
+  text-align: center; /* Center the heading text */
+  margin: 20px 0; /* Vertical margin for spacing */
+  text-transform: uppercase; /* Uppercase text for a strong presence */
+  letter-spacing: 1.5px; /* Spacing between letters for clarity */
+  font-family: "Arial", sans-serif; /* Font family for a clean appearance */
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); /* Soft shadow for depth */
+}
+h2 {
+  font-size: 28px; /* Set a slightly smaller font size than h1 */
+  font-weight: normal; /* Use normal weight for contrast with h1 */
+  color: #00ffcc; /* Use white for good contrast against dark backgrounds */
+  text-align: left; /* Center the text for uniformity */
+  margin: 10px 0; /* Add vertical margins for spacing */
+  text-transform: capitalize; /* Capitalize the first letter of each word */
+  letter-spacing: 0.5px; /* Slightly increase spacing between letters */
+  font-family: "Arial", sans-serif; /* Keep the same font family for consistency */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  margin-left: 15px;
+}
 select {
-  display: block;
-  width: 100%;
-  font-size: 18px;
-  border-radius: 4px;
-  padding: 10px;
+  padding: 12px 20px; /* Padding for the dropdown */
+  border: 2px solid #00ffcc; /* Neon border */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 16px; /* Font size for readability */
+  color: #00ffcc; /* Neon text color */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  appearance: none; /* Remove default dropdown arrow */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6"><polygon points="0,0 10,0 5,6" fill="%2300ffcc"/></svg>'); /* Custom dropdown arrow */
+  background-repeat: no-repeat; /* Prevent repeating background */
+  background-position: right 10px center; /* Position the arrow */
+  background-size: 10px; /* Size of the arrow */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+  width: 700px;
 }
-
+select:hover {
+  background-color: #e0e0e0;
+  border-color: #0056b3;
+}
+select:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+select option {
+  padding: 10px;
+  background-color: #f0f0f0;
+  color: #333;
+}
+section option:checked {
+  background-color: #007bff;
+  color: white;
+}
 .container {
-  max-width: 600px;
-  margin: 60px auto;
-  background: white;
-  padding: 30px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 10px;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  max-width: 1000px; /* Maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Padding around the content */
+  background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 255, 204, 0.5); /* Soft shadow for depth */
+  margin: 95px auto;
+  max-height: 500px;
+  height: 600px;
 }
 
 .city {
-  display: flex;
-  margin: 10px 0;
-  justify-content: space-between;
-  padding: 30px 0;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+  border-radius: 10px; /* Rounded corners */
+  justify-content: center;
+  text-align: center; /* Center text alignment */
+  margin: 20px auto; /* Center the container horizontally */
+  align-content: center;
+  box-shadow: 0 4px 20px rgba(0, 255, 204, 0.5); /* Subtle glow shadow */
+  width: 700px;
+  padding-bottom: 15px;
 }
 
 .city:last-child {
@@ -44,22 +107,33 @@ select {
 }
 
 .date {
-  opacity: 0.7;
+  font-size: 18px; /* Smaller font size for the date */
+  color: #cccccc; /* Light grey for the date */
+  margin-top: 5px; /* Space above the date */
+  margin-left: -515px;
 }
 
 .time {
-  font-size: 48px;
-  font-weight: bold;
+  font-size: 48px; /* Larger font size for time */
+  color: #00ffcc; /* White color for the time */
+  font-weight: bold; /* Bold text for emphasis */
+  display: block; /* Display as block for better spacing */
+  margin-left: 9px;
+  margin-top: -55px;
+  text-align: right;
+  margin-right: 28px;
 }
-
-.time small {
-  font-size: 24px;
-  vertical-align: middle;
-  line-height: 48px;
-}
-
 footer {
-  text-align: center;
-  font-size: 18px;
-  color: rgba(0, 0, 0, 0.8);
+  margin: 3px 0; /* Small margins for paragraphs */
+  font-size: 16px; /* Font size for readability */
+}
+
+a {
+  color: #00ffcc; /* Neon link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+a:hover {
+  color: #ffcc00; /* Change color on hover */
+  text-decoration: underline; /* Underline on hover for emphasis */
 }
