@@ -109,7 +109,7 @@ section option:checked {
   font-size: 18px; /* Smaller font size for the date */
   color: #cccccc; /* Light grey for the date */
   margin-top: -5px; /* Space above the date */
-  margin-left: -475px;
+  margin-left: -480px;
 }
 
 .time {
